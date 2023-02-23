@@ -1,5 +1,3 @@
-import '../css/common.css';
-
 const bodyEl = document.querySelector('body');
 const startEl = document.querySelector('button[data-start]');
 const stopEl = document.querySelector('button[data-stop]');
