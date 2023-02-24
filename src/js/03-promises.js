@@ -1,3 +1,5 @@
+import { Notify } from "notiflix";
+
 const formEl = document.querySelector('.form');
 let delayInput = null;
 let stepInput = null;
@@ -31,10 +33,10 @@ const submitHandler = e => {
   for (let i = 1; i <= amountInput; i++) {
     createPromise(i, delayInput)
       .then(({ position, delay }) => {
-        console.log(`✅ Fulfilled promise ${position} in ${delay}ms`)
+        Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`)
       })
       .catch(({ position, delay }) => {
-        console.log(`❌ Rejected promise ${position} in ${delay}ms`)
+        Notify.failure(`❌ Rejected promise ${position} in ${delay}ms`)
       });
 
     delayInput += stepInput;

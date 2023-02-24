@@ -39,11 +39,30 @@ a {
   color: rgb(252, 0, 0)
 }
 
-input {
+/* input {
+  background-color: transparentx;
+  border-radius: 20px;
   padding: 5px;
   margin-right: 5px;
   font-size: 20px;
   text-align: center;
+} */
+
+input {
+  padding: 5px;
+  font-size: 20px;
+  border-width: 2px;
+  border-color: #cfcfcf;
+  background-color: #ffffff;
+  color: #000000;
+  border-style: groove;
+  border-radius: 20px;
+  box-shadow: 0px 0px 13px rgba(66, 66, 66, .34);
+  text-shadow: 0px 0px 5px rgba(66, 66, 66, .75);
+}
+
+input:focus {
+  outline: none;
 }
 
 span {
